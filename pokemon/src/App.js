@@ -6,14 +6,16 @@ import './styles.scss';
 import Pokemon from './components/Pokemon';
 
 class App extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      pokemon: data
-    };
+  state = {
+    pokemon: data
+  }
+
+  componentDidMount() {
+    console.log("App: Component Mounts");
   }
 
   render() {
+    console.log("App: Renders Component");
     return (
       <div className="App">
         <Pokemon pokemon={this.state.pokemon} />
