@@ -11,6 +11,11 @@ class App extends React.Component {
             </form>
             <div id="dogImage">
                 <img src="https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg"/>
+                <img src="https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg"/>
+                <img src="https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg"/>
+                <img src="https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg"/>
+                <img src="https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg"/>
+                <img src="https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg"/>
             </div>
         </div>);
     }
