@@ -17,7 +17,9 @@ class App extends React.Component {
             </form>
             <div id="dogImage">
                 {
-                    dogImages.map()
+                    dogImages.map(image => {
+                        return(<img src={image} alt={image}/>);
+                    })
                 }
                 
                 <img src="https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg"/>
