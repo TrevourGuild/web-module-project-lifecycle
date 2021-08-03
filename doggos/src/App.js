@@ -28,17 +28,19 @@ class App extends React.Component {
 
         if (prevState.dogImages !== this.state.dogImages) {
             console.log("App: DogImage Updates");
-            if()
-            // axios.get('https://dog.ceo/api/breed/husky/images')
-            // .then(res=> {
-            //     this.setState({
-            //         ...this.state,
-            //         dogImages:res.data.message
-            //     });
-            // })
-            // .catch(err=> {
-            //     console.log(err);
-            // })
+            if(this.state.breed === 'chihuahua') {
+                axios.get('https://dog.ceo/api/breed/husky/images')
+                .then(res=> {
+                    this.setState({
+                        ...this.state,
+                        dogImages:res.data.message,
+                        breed: 'husky'
+                    });
+                })
+                .catch(err=> {
+                    console.log(err);
+                })
+            }
         }
     }
 
