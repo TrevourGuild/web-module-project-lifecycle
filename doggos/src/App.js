@@ -10,7 +10,7 @@ class App extends React.Component {
                 <button>Fetch Dogs</button>
             </form>
             <div id="dogImage">
-
+                <img src=""/>
             </div>
         </div>);
     }
