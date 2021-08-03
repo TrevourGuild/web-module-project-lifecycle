@@ -6,8 +6,9 @@ const AppFunc = () => {
   
   useEffect(()=> {
     console.log("AppFunc: Component Has Mounted");
+    setName();
   }, []);
-  
+
   useEffect(()=> {
     console.log("AppFunc: Component Has Updated");
   })
