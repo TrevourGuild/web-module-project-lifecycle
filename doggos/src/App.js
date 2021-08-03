@@ -10,6 +10,12 @@ class App extends React.Component {
         axios.get('https://dog.ceo/api/breed/hound/images')
             .then(res=> {
                 console.log(res);
+                this.setState({
+                    dogImages:res.data.message
+                });
+            })
+            .catch(err=> {
+                console.log(err);
             })
     }
 
