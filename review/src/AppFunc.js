@@ -11,6 +11,7 @@ const AppFunc = () => {
 
   useEffect(()=> {
     console.log("AppFunc: Component Has Updated");
+    setName();
   })
 
   const handleClick = () => {
