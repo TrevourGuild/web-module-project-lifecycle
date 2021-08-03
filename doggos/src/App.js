@@ -24,9 +24,17 @@ class App extends React.Component {
     }
 
     handleClick = (e) => {
-
+        e.preventDefault();
+        
+        axios.get('https://dog.ceo/api/breed/husky/images')
+            .then(res => {
+                console.log(res);
+            })
+            .catch(err=> {
+                console.log(err);
+            })
     }
-    
+
     render() {
         return(<div>
             <h1>Dog Picture Getting System 1.1</h1>
