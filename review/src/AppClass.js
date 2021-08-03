@@ -14,7 +14,12 @@ class AppClass extends React.Component {
   }
 
   componentDidUpdate(prevProps, prevState) {
-    console.log("AppClass: Component Has Updated.")
+    console.log("AppClass: Component Has Updated.");
+    console.log("old props", prevProps);
+    console.log("new props", this.props);
+s
+    console.log("old state", prevState);
+    console.log("new state", this.state);
   }
 
   handleNameButtonClick = (e) => {
