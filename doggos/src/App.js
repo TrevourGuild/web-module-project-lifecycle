@@ -12,6 +12,7 @@ class App extends React.Component {
             .then(res=> {
                 console.log(res);
                 this.setState({
+                    ...this.state,
                     dogImages:res.data.message
                 });
             })
@@ -22,10 +23,16 @@ class App extends React.Component {
 
     handleChange = (e) => {
         console.log(e.target.value);
+        this.setState({
+            ...this.state,
+            breed:e.target.value
+        })
     }
 
     handleClick = (e) => {
         e.preventDefault();
+
+        console.log(this.state.breed);
 
         axios.get('https://dog.ceo/api/breed/husky/images')
             .then(res => {
