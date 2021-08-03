@@ -21,13 +21,6 @@ class App extends React.Component {
                         return(<img src={image} alt={image}/>);
                     })
                 }
-                
-                <img src="https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg"/>
-                <img src="https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg"/>
-                <img src="https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg"/>
-                <img src="https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg"/>
-                <img src="https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg"/>
-                <img src="https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg"/>
             </div>
         </div>);
     }
