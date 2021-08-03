@@ -1,18 +1,9 @@
 import React from "react";
 
 class AppClass extends React.Component {
-  // constructor() {
-  //   console.log("AppClass: Setup State.");
-  //   super();
-  //   this.state = {
-  //     name: "Warren"
-  //   };
-  // }
-  
   state = {
     name: "Warren"
   }
-
 
   componentDidMount() {
     console.log("AppClass: Component Has Mounted.");
