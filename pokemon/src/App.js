@@ -17,7 +17,7 @@ class App extends React.Component {
         ...this.state,
         pokemon: data
       })
-    }, 3000);
+    }, 5000);
   }
 
   render() {
