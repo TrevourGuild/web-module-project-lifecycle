@@ -26,20 +26,20 @@ class App extends React.Component {
         //3. make an axios call for husky and make breed husky
         console.log("App: Component Updates");
 
-        if (prevProps.dogImages !== this.state.dogImages) {
+        if (prevState.dogImages !== this.state.dogImages) {
             console.log("App: DogImage Updates");
+            if()
+            // axios.get('https://dog.ceo/api/breed/husky/images')
+            // .then(res=> {
+            //     this.setState({
+            //         ...this.state,
+            //         dogImages:res.data.message
+            //     });
+            // })
+            // .catch(err=> {
+            //     console.log(err);
+            // })
         }
-
-        // axios.get('https://dog.ceo/api/breed/husky/images')
-        //     .then(res=> {
-        //         this.setState({
-        //             ...this.state,
-        //             dogImages:res.data.message
-        //         });
-        //     })
-        //     .catch(err=> {
-        //         console.log(err);
-        //     })
     }
 
     handleChange = (e) => {
