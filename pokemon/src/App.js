@@ -25,7 +25,7 @@ class App extends React.Component {
     return (
       <div className="App">
         
-          <Pokemon pokemon={this.?state.pokemon} /> 
+          <Pokemon pokemon={this.state?.pokemon} /> 
         
       </div>
     );
