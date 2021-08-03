@@ -23,7 +23,7 @@ class App extends React.Component {
         return(<div>
             <h1>Dog Picture Getting System 1.1</h1>
             <form>
-                <input/>
+                <input onChange={handleChange}/>
                 <button>Fetch Dogs</button>
             </form>
             <div id="dogImage">
