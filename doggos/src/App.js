@@ -29,7 +29,6 @@ class App extends React.Component {
                         return(<img src={image} alt={image}/>);
                     })
                 }
-                
             </div>
         </div>);
     }
