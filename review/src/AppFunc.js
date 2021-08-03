@@ -5,8 +5,8 @@ const AppFunc = () => {
   const [name, setName] = useState("Warren");
   
   useEffect(()=> {
-
-  });
+    console.log("AppFunc: Component Has Mounted");
+  }, []);
 
   const handleClick = () => {
     console.log("AppFunc: Change Our State");
