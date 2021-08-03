@@ -25,6 +25,8 @@ class App extends React.Component {
         //2. did we search for chihuahua?
         //3. make an axios call for husky and make breed husky
         console.log("App: Component Updates");
+        console.log("old state: ", prevState);
+        console.log("new state: ", this.state);
     }
 
     handleChange = (e) => {
