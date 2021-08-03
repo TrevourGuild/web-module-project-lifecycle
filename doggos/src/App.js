@@ -19,6 +19,10 @@ class App extends React.Component {
             })
     }
 
+    handleChange = (e) => {
+        console.log(e.target.value);
+    }
+
     render() {
         return(<div>
             <h1>Dog Picture Getting System 1.1</h1>
