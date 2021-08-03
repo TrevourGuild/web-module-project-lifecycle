@@ -28,16 +28,16 @@ class App extends React.Component {
         console.log("old state: ", prevState);
         console.log("new state: ", this.state);
 
-        axios.get('https://dog.ceo/api/breed/husky/images')
-            .then(res=> {
-                this.setState({
-                    ...this.state,
-                    dogImages:res.data.message
-                });
-            })
-            .catch(err=> {
-                console.log(err);
-            })
+        // axios.get('https://dog.ceo/api/breed/husky/images')
+        //     .then(res=> {
+        //         this.setState({
+        //             ...this.state,
+        //             dogImages:res.data.message
+        //         });
+        //     })
+        //     .catch(err=> {
+        //         console.log(err);
+        //     })
     }
 
     handleChange = (e) => {
