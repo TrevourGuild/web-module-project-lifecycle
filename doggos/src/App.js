@@ -23,13 +23,18 @@ class App extends React.Component {
         console.log(e.target.value);
     }
 
+    handleClick = (e) => {
+
+    }
+    
     render() {
         return(<div>
             <h1>Dog Picture Getting System 1.1</h1>
             <form>
                 <input onChange={this.handleChange}/>
-                <button>Fetch Dogs</button>
+                <button onClick={this.handleClick}>Fetch Dogs</button>
             </form>
+
             <div id="dogImage">
                 {
                     this.state.dogImages.map(image => {
