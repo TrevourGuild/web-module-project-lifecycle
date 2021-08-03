@@ -33,7 +33,7 @@ class App extends React.Component {
 
         console.log(this.state.breed);
 
-        axios.get('https://dog.ceo/api/breed/husky/images')
+        axios.get(`https://dog.ceo/api/breed/${this.state.breed}/images`)
             .then(res => {
                 console.log(res);
             })
