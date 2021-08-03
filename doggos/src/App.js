@@ -10,7 +10,6 @@ class App extends React.Component {
     componentDidMount() {
         axios.get('https://dog.ceo/api/breed/husky/images')
             .then(res=> {
-                console.log(res);
                 this.setState({
                     ...this.state,
                     dogImages:res.data.message
@@ -22,7 +21,10 @@ class App extends React.Component {
     }
 
     componentDidUpdate(prevProps, prevState) {
-        
+        //1. did we update our dogImages?
+        //2. did we search for chihuahua?
+        //3. make an axios call for husky and make breed husky
+        console.log("App: Component Updates");
     }
 
     handleChange = (e) => {
