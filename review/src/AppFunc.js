@@ -8,6 +8,11 @@ const AppFunc = () => {
     console.log("AppFunc: Component Has Mounted");
   }, []);
 
+
+  useEffect(()=> {
+    console.log("AppFunc: Component Has Updated");
+  })
+
   const handleClick = () => {
     console.log("AppFunc: Change Our State");
     setName("Allison");
