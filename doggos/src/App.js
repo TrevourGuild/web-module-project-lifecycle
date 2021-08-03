@@ -26,7 +26,7 @@ class App extends React.Component {
             <div id="dogImage">
                 {
                     dogImages.map(image => {
-                        return(<img width={300} src={image} alt={image}/>);
+                        return(<img width={200} src={image} alt={image}/>);
                     })
                 }
             </div>
