@@ -8,7 +8,7 @@ class App extends React.Component {
             "https://images.dog.ceo/breeds/hound-afghan/n02088094_1007.jpg",
             "https://images.dog.ceo/breeds/hound-afghan/n02088094_1023.jpg"
         ];
-        
+
         return(<div>
             <h1>Dog Picture Getting System 1.1</h1>
             <form>
@@ -16,6 +16,10 @@ class App extends React.Component {
                 <button>Fetch Dogs</button>
             </form>
             <div id="dogImage">
+                {
+                    dogImages.map()
+                }
+                
                 <img src="https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg"/>
                 <img src="https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg"/>
                 <img src="https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg"/>
