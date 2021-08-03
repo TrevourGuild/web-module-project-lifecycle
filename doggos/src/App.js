@@ -3,7 +3,8 @@ import axios from 'axios';
 
 class App extends React.Component {
     state = {
-        dogImages: []
+        dogImages: [],
+        breed: ""
     }
 
     componentDidMount() {
@@ -25,7 +26,7 @@ class App extends React.Component {
 
     handleClick = (e) => {
         e.preventDefault();
-        
+
         axios.get('https://dog.ceo/api/breed/husky/images')
             .then(res => {
                 console.log(res);
