@@ -27,6 +27,17 @@ class App extends React.Component {
         console.log("App: Component Updates");
         console.log("old state: ", prevState);
         console.log("new state: ", this.state);
+
+        axios.get('https://dog.ceo/api/breed/husky/images')
+            .then(res=> {
+                this.setState({
+                    ...this.state,
+                    dogImages:res.data.message
+                });
+            })
+            .catch(err=> {
+                console.log(err);
+            })
     }
 
     handleChange = (e) => {
@@ -40,7 +51,6 @@ class App extends React.Component {
         e.preventDefault();
         axios.get(`https://dog.ceo/api/breed/${this.state.breed}/images`)
             .then(res => {
-                console.log(res);
                 this.setState({
                     ...this.state,
                     dogImages: res.data.message
